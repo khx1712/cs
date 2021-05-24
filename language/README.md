@@ -37,7 +37,6 @@
 
 ##### Garbage Collection <a id="Garbage-Collection"></a>
 - 정의 : 프로그램이 동적으로 할당했던 메모리 영역 중에서 ```unreachable```한 영역(어떤 변수도 가리키지 않게 된 영역)을 탐지하여 자동으로 해제한다.
-- 중요성 : GC(Garbage Collection)를 수행할때, GC를 수행하기 위한 Thread 이외의 모든 Thread의 작업이 멈추는 ```stop-the-world```가 발생하므로 시스템에 큰 영향을 끼친다. 따라서, GC 옵션 등은 지속적인 튜닝과 모니터링을 통해서 해당 서비스에 가장 적합한 값을 찾는 것이 중요하다.
 - 장단점
   - 장점
     - 유효하지 않은 포인터 접근 방지
@@ -46,4 +45,5 @@
     - 어떤 메모리를 해제할지 결정하는 데 따른 비용 발생
     - GC가 일어나는 타이밍이나 점유 시간 예측에 대한 어려움
 
+*GC(Garbage Collection)를 수행할때, GC를 수행하기 위한 Thread 이외의 모든 Thread의 작업이 멈추는 ```stop-the-world```가 발생하므로 시스템에 큰 영향을 끼친다. 따라서, GC 옵션 등은 지속적인 튜닝과 모니터링을 통해서 해당 서비스에 가장 적합한 값을 찾는 것이 중요하다.
 *참고 : https://www.holaxprogramming.com/2013/07/20/java-jvm-gc/
