@@ -1,6 +1,9 @@
+# JAVA
+
 * [JVM, JRE, JDK 차이점](#JVM-JRE-JDK-차이점)
 * [JVM](#JVM)
 
+---
 
 ##### JVM, JRE, JDK 차이점 <a id="JVM-JRE-JDK-차이점"></a>
 - JVM
@@ -16,6 +19,8 @@
   - Java Development Kit
   - JRE + 개발 도구(컴파일러, 디버거 등)로 구성된다.
 - 포함관계는 JDK > JRE > JVM 순이다.
+
+---
 
 ##### JVM <a id="JVM"></a>
 - Class Loader에 의해 컴파일된 자바 바이트코드를 JVM Memory에 올리고, Execution Engine에 의해 바이트코드가 실행된다.
