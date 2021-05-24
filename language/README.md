@@ -23,6 +23,6 @@
 ---
 
 ##### JVM <a id="JVM"></a>
-- Class Loader에 의해 컴파일된 자바 바이트코드를 JVM Memory에 올리고, Execution Engine에 의해 바이트코드가 실행된다.
+- 컴파일된 자바 바이트코드는 Class Loader에 의해 JVM Memory에 올려지고, Execution Engine에 의해 실행된다.
 ![image](https://user-images.githubusercontent.com/35156064/119359057-2d175000-bce4-11eb-98cb-0f021fa811c4.png)
 
