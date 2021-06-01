@@ -3,7 +3,8 @@
 * [JVM, JRE, JDK 차이점](#JVM-JRE-JDK-차이점)
 * [JVM](#JVM)
 * [Garbage Collection](#Garbage-Collection)
-
+* [VO, DTO, POJO, JavaBeans 차이점](#VO-DTO-POJO-JavaBeans)
+* [직렬화(Serializable)](#직렬화(Serializable))
 ---
 
 ##### JVM, JRE, JDK 차이점 <a id="JVM-JRE-JDK-차이점"></a>
@@ -46,4 +47,25 @@
     - GC가 일어나는 타이밍이나 점유 시간 예측에 대한 어려움
 
 *GC(Garbage Collection)를 수행할때, GC를 수행하기 위한 Thread 이외의 모든 Thread의 작업이 멈추는 ```stop-the-world```가 발생하므로 시스템에 큰 영향을 끼친다. 따라서, GC 옵션 등은 지속적인 튜닝과 모니터링을 통해서 해당 서비스에 가장 적합한 값을 찾는 것이 중요하다.
-*참고 : https://www.holaxprogramming.com/2013/07/20/java-jvm-gc/
+
+---
+
+##### VO, DTO, POJO, JavaBeans 차이점 <a id="VO-DTO-POJO-JavaBeans"></a>
+
+- ```VO(Value Object)```
+  - java.lang.Integer와 같이 값(value)을 포함하고 있는 객체
+- ```DTO(Data Transfer Object)```
+  - 계층 간 데이터 교환을 위해 사용하는 객체
+- ```POJO(Plain Old Java Object)```
+  - 간단하고 경량적인 자바 객체
+- ```JavaBeans```
+  - Sun의 JavaBeans 컨벤션을 따르는 객체
+  - JavaBeans 컨벤션
+    - public default 생성자를 가져야한다.
+    - 클래스의 속성은 getter/setter로 접근이 가능해야한다. 
+    - 클래스는 serializable 해야한다.
+
+---
+
+##### 직렬화(Serializable) <a id="직렬화(Serializable)"></a>
+
